@@ -242,11 +242,11 @@ system("cls");
 							check2++;
 							break;
 						}else if(choice==1){
-							printf("\n  ==========Exited Program!===========\n");
-							printf("   ========Thanks For Using Our App!=========\n");
+							printf("\n  ==========Chuong trinh da thoat===========\n");
+							printf("   ========Cam on vi da dung dung dung cua chung toi=========\n");
 							exit (1);
 						}else{
-							printf("\n\t*Invalid Input.Try again!*\n\n");
+							printf("\n\t*Nhap vo khong hop le, hay thu lai*\n\n");
 							fflush(stdin);
 							continue;
 						}
@@ -256,24 +256,24 @@ system("cls");
 				if (check2!=0){
 					break;
 				}
-				printf("*This User's Account Is Currently Open, Do You Wish To Lock?(Press [1] To Confirm, [0] To Cancel): ");
+				printf("*Nguoi dung dang khoa,ban co muon mo khong(Nhan [1] dong y, [0] de thoat): ");
 				scanf("%d", &confirm);	
 				if(confirm==1){
-					strcpy(users[i].status, "Locked");
-					printf(" **Successfully Locked.**\n");
+					strcpy(users[i].status, "Khoa");
+					printf(" **Mo khoa thanh cong**\n");
 						int choice;
 					while(1){
-						printf("\n\tGo back(1)? or Exit(2): ");
+						printf("\n\tQuay lai(0) hoac thoat(1): ");
 						scanf("%d", &choice);
 						if(choice==0){
 							check2++;
 							break;
 						}else if(choice==1){
-							printf("\n  ==========Exited Program!===========\n");
-							printf("   ========Thanks For Using Our App!=========\n");
+							printf("\n  ==========Chuong trinh da thoat===========\n");
+							printf("   ========Cam on vi da dung dung dung cua chung toi=========\n");
 							exit (1);
 						}else{
-							printf("\n\t*Invalid Input.Try again!*\n\n");
+							printf("\n\t*Nhap vao khong hop le, hay thu lai*\n\n");
 							fflush(stdin);
 							continue;
 						}
@@ -307,11 +307,11 @@ system("cls");
 					if (check2!=0){
 					break;
 				}
-				printf("*Nguoi dung dang khoa,ban co muon mo khong(Press [1] To Confirm, [0] To Cancel): ");
+				printf("*Nguoi dung dang khoa,ban co muon mo khong(Nhan [1] dong y, [0] de thoat): ");
 				scanf("%d", &confirm);	
 			if(confirm==1){
 					strcpy(users[i].status, "Mo khoa");
-					printf(" **Successfully Opened.**\n");
+					printf(" **Mo khoa thanh cong**\n");
 					int choice;
 					while(1){
 						printf("\n\tQuay lai(0) hoac thoat(1): ");
@@ -324,7 +324,7 @@ system("cls");
 							printf("   ========Cam on vi da dung dung dung cua chung toi=========\n");
 							exit (1);
 						}else{
-							printf("\n\t*Invalid Input.Try again!*\n\n");
+							printf("\n\t*Nhap vao khong hop le, hay thu lai*\n\n");
 							fflush(stdin);
 							continue;
 						}
